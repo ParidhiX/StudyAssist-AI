@@ -63,6 +63,16 @@ def upload_pdf():
         "questions": questions
     })
 
+from flask import send_from_directory
+import os
+
+@app.route('/')
+def serve_react():
+    return send_from_directory('static', 'index.html')
+
+@app.errorhandler(404)
+def not_found(e):
+    return send_from_directory('static', 'index.html')
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
