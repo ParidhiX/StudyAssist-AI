@@ -1,0 +1,97 @@
+/* Global Layout */
+.app-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Landing Section */
+.landing {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+.landing .title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 10px;
+}
+.landing .tagline {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: rgba(255,255,255,0.85);
+}
+
+/* Upload Section (premium card) */
+.upload-box {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  width: 50%;
+  max-width: 600px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  margin-bottom: 40px;
+}
+.file-input {
+  margin: 15px 0;
+}
+.upload-btn {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #4e54c8, #8f94fb);
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.upload-btn:hover {
+  transform: scale(1.03);
+  background: linear-gradient(90deg, #3b41c5, #6f77f7);
+}
+
+/* Cards (Summary + Quiz) */
+.card {
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 20px auto;
+  width: 65%;
+  max-width: 700px;
+  text-align: left;
+}
+.card h2 {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  color: #222;
+  margin-bottom: 15px;
+}
+.card p, .card li {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+}
+.card ul {
+  padding-left: 20px;
+}
+
+/* Icons */
+.icon-large {
+  font-size: 2.5rem;
+  color: #4e54c8;
+  margin-bottom: 15px;
+}
+.icon-card {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: #4e54c8;
+}
